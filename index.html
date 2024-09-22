@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+'    <main class="container">
+        <h2>Bem vinda, Hope Marcela da Silva!</h2>
+        <img src="1e5fb246a1654c1b89137e173ccfc20b~tplv-nhvfeczskr-1_250_0.webp" alt="Us" width=80 height=80 class="img-log">
+        <form action="">
+            <div class="inputs">
+                <input type="password" id="password"  placeholder="Password">
+                <div class="underline"></div>
+            </div>
+            <input type="submit" onclick="log(); return false">
+            <div class="dica">Dica: data da nossa primeira conversa (dd/mm).</div>
+        </form>
+    </main>'
+
+    <script>
+        function log(){
+            var senha = document.getElementById('password').value;
+
+            if(senha == "07/07"){
+                alert('Parabéns bb!');
+                location.href = "https://gyshro.github.io/2/";
+            }else{
+                alert('Pensa mais ou pouco!');
+            }
+        }
+    </script>
+
+</body>
+</html>
